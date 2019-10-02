@@ -8,6 +8,8 @@
 python main.py
 ```
 
+It will create `random-numbers-sample.txt` with the rando numbers list
+
 ## Test algorithm
 
 ```
