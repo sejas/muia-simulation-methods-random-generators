@@ -1,2 +1,20 @@
 # muia-simulation-methods-random-generators
-Study of random generators 
+
+## Study of random generators
+
+## Execute
+
+```
+python main.py
+```
+
+## Test algorithm
+
+```
+python isml_test.py
+```
+
+---
+
+MUIA 2019/2020
+Authors: Antonio Sejas, Danielle Pellegrino, Sergio Cavero
