@@ -5,8 +5,10 @@ Authors: Antonio Sejas, Danielle Pellegrino, Sergio Cavero
 
 from imsl import IMSL
 
-imsl = IMSL()
-
+FILENAME = 'random-numbers-sample.txt'
 K = 10000  # limit
-for i in range(K):
-    print(imsl.gen())
+
+imsl = IMSL()
+with open(FILENAME, 'w') as f:
+    for i in range(K):
+        f.write('%s\n' % imsl.gen())
