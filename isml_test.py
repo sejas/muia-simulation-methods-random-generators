@@ -1,3 +1,8 @@
+'''
+MUIA 2019/2020
+Authors: Antonio Sejas, Danielle Pellegrino, Sergio Cavero
+'''
+
 # Validate 32 bits Architectures, Park y Miller (1988)
 from imsl import IMSL
 
