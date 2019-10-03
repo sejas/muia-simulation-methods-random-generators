@@ -5,7 +5,8 @@
 int main (void)
 {
    unif01_Gen *gen;
-   gen = ulcg_CreateLCG (2147483647, 16807, 0, 12345);
+   // 2147483647 is 2^31 - 1 
+   gen = ulcg_CreateLCG (2147483647, 16807, 0, 1);
    bbattery_SmallCrush (gen);
    ulcg_DeleteGen (gen);
    return 0;
