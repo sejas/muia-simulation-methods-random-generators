@@ -11,4 +11,4 @@ K = 10000  # limit
 imsl = IMSL()
 with open(FILENAME, 'w') as f:
     for i in range(K):
-        f.write('%s\n' % imsl.gen_interval_0_1())
+        f.write('%.16f\n' % imsl.gen_interval_0_1())
