@@ -16,3 +16,6 @@ class IMSL:
     def gen(self):
         self.xi = (self.a*self.xi+self.b) % self.m
         return self.xi
+
+    def gen_interval_0_1(self):
+        return self.gen()/self.m
