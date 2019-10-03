@@ -15,6 +15,6 @@ for i in range(K):
 
 if latest == EXPECTED_VALUE:
     print('Everything ok, There is no overflow')
-    print('The 10000th number is %s 👌' % EXPECTED_VALUE)
+    print('The 10000th number is the expected number %s 👌' % EXPECTED_VALUE)
 else:
     raise 'ERROR !! There is overflow.'
