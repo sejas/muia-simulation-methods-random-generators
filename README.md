@@ -1,6 +1,8 @@
-# muia-simulation-methods-random-generators
+# RANDOM GENERATORS AND CONTRASTS [MUIA - SIMULATION METHODS]
 
-## Study of random generators
+# =========== CREATE A CONGRUENTIAL RANDOM GENERATOR IN PYTHON ===========
+
+> You can find our custom development in python in the folder: `/generator-in-python`
 
 ## Execute
 
@@ -14,6 +16,31 @@ It will create `random-numbers-sample.txt` with the rando numbers list
 
 ```
 python isml_test.py
+```
+
+# =========== STUDY OF RANDOM GENERATOR CONTRASTS WITH TESTU01 ===========
+
+> You can find our constrast study in the folder: `/contrasts-with-testu01`
+
+## Requirements
+
+You need to have installed the TestU01 library to be able to compile the code.
+http://simul.iro.umontreal.ca/testu01/tu01.html
+
+If you are on Unix or MacOS system, you can try to directly execute the `./muia` application.
+
+## Compilation
+
+After installing the code
+
+```
+➜ clang muia.c  -lmylib -lprobdist -ltestu01 -o muia
+```
+
+## How to execute
+
+```bin
+➜ ./muia
 ```
 
 ---
