@@ -1,6 +1,17 @@
 # RANDOM GENERATORS AND CONTRASTS [MUIA - SIMULATION METHODS]
 
-# =========== CREATE A CONGRUENTIAL RANDOM GENERATOR IN PYTHON ===========
+Implementation of congruential random generator. IMSL.
+Using Schrage method to avoid overflow.
+
+> Park, Stephen & Miller, Keith. (1988). Random Number Generators: Good Ones Are Hard to Find. Commun. ACM. 31. 1192-1201. 10.1145/63039.63042.
+
+**Authors**
+
+- Antonio Sejas
+- Danielle Pellegrino
+- Sergio Cavero
+
+## ======= CREATE A CONGRUENTIAL RANDOM GENERATOR IN PYTHON =======
 
 > You can find our custom development in python in the folder: `/generator-in-python`
 
@@ -10,7 +21,7 @@
 python main.py
 ```
 
-It will create `random-numbers-sample.txt` with the rando numbers list
+It will create `random-numbers-sample.txt` with the random numbers list
 
 ## Test algorithm
 
@@ -18,7 +29,7 @@ It will create `random-numbers-sample.txt` with the rando numbers list
 python imsl_test.py
 ```
 
-# =========== STUDY OF RANDOM GENERATOR CONTRASTS WITH TESTU01 ===========
+## ======= STUDY OF RANDOM GENERATOR CONTRASTS WITH TESTU01 =======
 
 > You can find our constrast study in the folder: `/contrasts-with-testu01`
 

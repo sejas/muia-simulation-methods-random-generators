@@ -21,7 +21,9 @@ class IMSL_BASIC:
         return self.gen()/self.m
 
 
-class IMSL_BASIC:
+class IMSL:
+    """ Using Schrage method to avoid overflow """
+
     def __init__(self, x0=1, a=16807, m=2**31-1, b=0):
         self.xi = x0
         self.a = a
