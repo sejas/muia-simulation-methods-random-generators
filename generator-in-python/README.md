@@ -15,7 +15,7 @@ It will create `random-numbers-sample.txt` with the rando numbers list
 ## Test algorithm
 
 ```
-python isml_test.py
+python imsl_test.py
 ```
 
 ---
