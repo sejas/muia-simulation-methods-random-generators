@@ -3,7 +3,7 @@ MUIA 2019/2020
 Authors: Antonio Sejas, Danielle Pellegrino, Sergio Cavero
 '''
 
-# multiplicative congruential generator with IMSL parameters
+# Multiplicative congruential generator
 
 
 class IMSL:
@@ -12,9 +12,15 @@ class IMSL:
         self.a = a
         self.m = m
         self.b = b
+        self.i = 0
 
     def gen(self):
-        self.xi = (self.a*self.xi+self.b) % self.m
+        self.i += 1
+        temp = (self.a*self.xi+self.b)
+        if temp > 2 ^ 32:
+            print('we handle an overflow ok in %d with value %d' %
+                  (self.i, temp))
+        self.xi = temp % self.m
         return self.xi
 
     def gen_interval_0_1(self):
