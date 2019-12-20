@@ -25,10 +25,13 @@ class IMSL_BASIC:
 
 
 class IMSL:
-    """ Using Schrage method to avoid overflow """
+    """ Schrage method to avoid overflow
+    Code ataptation from:
+    Park, Stephen & Miller, Keith. (1988). Random Number Generators: Good Ones Are Hard to Find. Commun. ACM. 31. 1192-1201. 10.1145/63039.63042.
+    """
 
     def __init__(self, x0=1, a=16807, m=2**31-1, b=0):
-        self.xi = x0
+        self.xi = x0 % m
         self.xi_interval_0_1 = x0/m
         self.a = a
         self.m = m
